@@ -6,7 +6,7 @@
 
     grid-template-areas: 
         "header header"
-        "conteudo titulo conteudo"
+        "conteudo titulo"
         "footer footer";
 }
 
@@ -15,4 +15,13 @@
     grid-area: conteudo;
     justify-content: center;
     align-items: center;
+}
+.titulo{
+    display: flex;
+    grid-area: titulo;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    
 }
