@@ -3,7 +3,7 @@
 }
 body{
     background-image: 
-        linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)),
+        linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)),
         url('Assets/img/deserto.png');
     background-size: cover;    
     background-position: center;  
@@ -81,4 +81,14 @@ body{
     padding: 8px;
     outline: 3px solid #c8912a50;
     outline-offset: -6px;
+}
+
+.monstro-teste{
+    width: 200px;
+    height: 150px;
+
+    transition: transform 0.3s ease;
+}
+.monstro-teste:houver{
+    transform : 0.3s ease;
 }
