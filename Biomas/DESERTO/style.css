@@ -184,3 +184,8 @@ body{
     background-color:  #cf1212;
 }
 
+a{
+    text-decoration: none;
+    color: var(--cor-texto);
+    margin-left: 20px;
+}
