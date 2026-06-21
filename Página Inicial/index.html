@@ -19,16 +19,16 @@
               <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
                 <ul class="navbar-nav nav-tabs">
                   <li class="nav-item m-nav-itens">
-                    <a class="nav-link active" aria-current="page" href="#inicio">Início</a>
+                    <a class="nav-link active" aria-current="page" id="inicioNav" href="#inicio" >Início</a>
                   </li>
                   <li class="nav-item m-nav-itens">
-                    <a class="nav-link" href="#regioes">Regiões</a>
+                    <a class="nav-link" id="regioesNav" href="#regioes" >Regiões</a>
                   </li>
                   <li class="nav-item m-nav-itens">
-                    <a class="nav-link" href="#monstros">Monstros</a>
+                    <a class="nav-link" id="monstrosNav" href="#monstros" >Monstros</a>
                   </li>
                   <li class="nav-item m-nav-itens">
-                    <a class="nav-link" href="#sobre">Sobre</a>
+                    <a class="nav-link" id="sobreNav" href="#sobre" >Sobre</a>
                   </li>
                 </ul>
               </div>
@@ -40,22 +40,25 @@
     
     <body>
         <section id="inicio">
-            <div class="container">
-                <div class="d-titulo-inicio">
-                    <img class="titulo-inicio" src="./Assets/img/Titulo_RampegesOfShangri-la.png" alt="Rampagers Of Shangri-La">
-                </div>
-                <div class="row">
-                    <div class="col-3"></div>
-                    <p class="descricao-inicio col-6">
-                        Dizem que Shangri-La foi criada pelos próprios deuses para testar os limites dos mortais.
-                        Suas terras abrigam tesouros esquecidos, criaturas colossais e segredos capazes de mudar o destino do mundo.
-                        Aqueles que ousam atravessar suas fronteiras buscam fama, poder ou conhecimento
-                         — mas poucos retornam para contar o que encontraram além do horizonte de Shangri-La. 
-                    </p>
-                    <div class="col-3"></div>
+            <div class="d-titulo-inicio">
+                <img class="titulo-inicio" src="./Assets/img/Titulo_RampegesOfShangri-la.png" alt="Rampagers Of Shangri-La">
+            </div>
+            <div class="row">
+                <div class="col-3"></div>
+                <p class="descricao-inicio col-6">
+                    Dizem que Shangri-La foi criada pelos próprios deuses para testar os limites dos mortais.
+                    Suas terras abrigam tesouros esquecidos, criaturas colossais e segredos capazes de mudar o destino do mundo.
+                    Aqueles que ousam atravessar suas fronteiras buscam fama, poder ou conhecimento
+                    — mas poucos retornam para contar o que encontraram além do horizonte de Shangri-La. 
+                </p>
+                <div class="col-3"></div>
+            </div>
+            <div class="justify-content-center d-flex">
+                <div class="d-btn-explorar justify-content-center d-flex">
+                    <a class="btn btn-primary" id="btn-explorar" href="">Comesse sua jornada!</a>
                 </div>
             </div>
-        </section>
+            </section>
         <section id="regioes">
             <div class="container">
                 <div class="d-titulo-regioes">
@@ -63,63 +66,67 @@
                     <h4 class="titulo-regioes">Escolha um bioma para explorar</h4>
                     <img class="right-titulo-regioes" src="" alt="">
                 </div>
-                <div class="row justify-content-center">
-                    <div class="col-4">
-                        <div class="card-monstro">
-
+                <div class="container-regioes d-flex justify-content-center gap-5 flex-wrap">                    
+                    <div class="row justify-content-center">
+                        <div class="col-4">
+                            <div class="card-regiao card">
+                                
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="card-regiao card">
+                                
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="card-regiao card">
+                                
+                            </div>
                         </div>
                     </div>
-                    <div class="col-4">
-                        <div class="card-monstro">
-
+                    <div class="row justify-content-center">
+                        <div class="col-4">
+                            <div class="card-regiao card">
+                                
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-4">
-                        <div class="card-monstro">
-
+                        <div class="col-4">
+                            <div class="card-regiao card">
+                                
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-4">
-                        <div class="card-monstro">
-
-                        </div>
-                    </div>
-                    <div class="col-4">
-                        <div class="card-monstro">
-
-                        </div>
-                    </div>
-                    <div class="col-4">
-                        <div class="card-monstro">
-
+                        <div class="col-4">
+                            <div class="card-regiao card">
+                                
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section id="Monstros">
+        <section id="monstros">
             <div class="container">
                 <div class="d-titulo-monstros">
                     <img class="left-titulo-monstros" src="" alt="">
                     <h2 class="titulo-monstros">Bestiario</h2>
                     <img class="right-titulo-monstros" src="" alt="">
                 </div>
-                <div class="row justify-content-center">
-                    <div class="col-4">
-                        <div class="card-monstro">
-
+                <div class="container-monstros d-flex justify-content-center gap-5 flex-wrap">
+                    <div class="row justify-content-center">
+                        <div class="col-4">
+                            <div class="card-monstro card">
+                                
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-4">
-                        <div class="card-monstro">
-
+                        <div class="col-4">
+                            <div class="card-monstro card">
+                                
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-4">
-                        <div class="card-monstro">
-
+                        <div class="col-4">
+                            <div class="card-monstro card">
+                                
+                            </div>
                         </div>
                     </div>
                 </div>
