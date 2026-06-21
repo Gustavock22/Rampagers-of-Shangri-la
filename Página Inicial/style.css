@@ -1,3 +1,9 @@
+body{
+    background-color: #0c0d14f1;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 .m-nav-itens{
     margin-left: 30px;
     margin-right: 30px;
@@ -10,6 +16,8 @@
 }
 
 .d-titulo-inicio{
+    position: relative;
+    z-index: 1;
     justify-content: center;
     display: flex;
 }
@@ -20,15 +28,138 @@
 }
 
 .descricao-inicio{
+    position: relative;
+    z-index: 1;
     text-align:center;
 }
 
 .espacamento{
-    margin: 80px;
+    margin: 50px;
+}
+
+#inicio::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgb(5, 6, 17), transparent 60%);
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle, transparent 40%, rgb(5, 6, 17));
 }
 
 #inicio{
+    position: relative;
+    z-index: 0;
+    background-image: url('./Assets/img/backgroudPaginaInicial.png');
+    background-size: cover;
     scroll-margin-top: 80px;
+    justify-content: center;
+    display: inline-block;
+}
+
+.d-btn-explorar{
+    z-index: 1;
+    position: relative;
+    width: 250px;
+    margin: 20px;
+    background:linear-gradient(
+    to bottom,
+    #eb2a08,
+    #d10404ec, 
+    #ad0101  
+  );
+    border:#e6bc03 3px solid;
+
+    border-radius: 20px;
+}
+
+#btn-explorar{
+    width: 200px;
+    font-size: 25px;
+    border: none;
+    font-family: 'Cinzel', serif;
+    letter-spacing: 4px;
+    background: linear-gradient(
+    to bottom,
+    #ffd105,
+    #dfac05ec, 
+    #e6bc03,  
+    #e9fa00  
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.card{
+    transition: 0.3s;
+}
+
+.card:hover{
+    transform: scale(1.05);
+}
+
+#regioes{
+    position: relative;
+    z-index: 1;
+    background-color: rgb(5, 6, 17);
+    scroll-margin-top: 80px;
+    padding-top: 30px;
+    padding-bottom: 80px;
+    margin-bottom: 25px;
+    margin-top: -10px;
+    border-radius: 15px;
+
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.d-titulo-regioes{
+    justify-content: center;
+    display: flex;
+    padding-top: 40px;
+    padding-bottom: 30px;
+}
+
+.card-regiao{
+    background-color: #0c0d14f1;
+    width: 250px;
+    height: 400px;
+
+    display: flex;
+    justify-content: flex-end;
+
+    margin-top: 30px;
+    margin-right: 15px;
+    margin-left: 15px;
+
+    border-radius: 10px;
+    border: 1px solid #c8912ac9;
+}
+
+#monstros{
+    background-color: black;
+    scroll-margin-top: 80px;
+    padding-top: 30px;
+    padding-bottom: 80px;
+    margin-bottom: 10px;
+    border-top: 8px solid #dfe796c9;
+    border-radius: 15px;
+
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.d-titulo-monstros{
+    justify-content: center;
+    display: flex;
+    padding-bottom: 30px;
 }
 
 .card-monstro{
@@ -40,8 +171,12 @@
     justify-content: flex-end;
 
     margin-top: 30px;
-    margin-right: 30px;
+    margin-right: 15px;
+    margin-left: 15px;
 
     border-radius: 10px;
     border: 1px solid #c8912ac9;
 }
+
+
+

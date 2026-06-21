@@ -1,6 +1,6 @@
 const monstrosDados = {
     "rainha-sete-maldicao": {
-        nome: "Rainha Sete Maldição",
+        nome: "Rainha Das Sete Maldição",
         descricao: 
             "Em um último esforço para salvar seu povo da destruição, a rainha realizou um antigo ritual que prometia proteger o reino. Porém, o sacrifício falhou, desencadeando uma catástrofe que engoliu a cidade sob as areias do deserto. Sua alma permaneceu presa às ruínas de seu antigo lar, condenada a vagar eternamente entre os vestígios do império que jurou proteger. Consumida pela culpa e pela loucura ao longo dos séculos, ela passou a enxergar qualquer intruso como uma ameaça ao seu reino. Dizem que aqueles que ousam atravessar suas fronteiras são marcados por sua maldição e perseguidos até deixarem as areias para trás... ou se tornarem parte delas.",
         imagem: "../DESERTO/Assets/img/rainha-sete-maldicao.png"
