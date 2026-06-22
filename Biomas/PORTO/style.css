@@ -16,6 +16,10 @@ a{
     color: var(--cor-texto);
 }
 
+.espacamento{
+    margin-bottom: 50px;
+}
+
 .titulo-principal{
     font-family: 'Cinzel', serif;
     letter-spacing: 4px;
