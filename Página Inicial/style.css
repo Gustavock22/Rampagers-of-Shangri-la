@@ -1,7 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body{
     background-color: #0c0d14f1;
     color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 .m-nav-itens{
@@ -15,26 +23,14 @@ body{
     margin: 0;
 }
 
-.d-titulo-inicio{
+#inicio{
     position: relative;
-    z-index: 1;
+    z-index: 0;
+    background-image: url('./Assets/img/backgroudPaginaInicial.png');
+    background-size: cover;
+    scroll-margin-top: 80px;
     justify-content: center;
-    display: flex;
-}
-
-.titulo-inicio{
-    height: 300px;
-    width: 600px;
-}
-
-.descricao-inicio{
-    position: relative;
-    z-index: 1;
-    text-align:center;
-}
-
-.espacamento{
-    margin: 50px;
+    display: block;
 }
 
 #inicio::before {
@@ -51,15 +47,71 @@ body{
   background: radial-gradient(circle, transparent 40%, rgb(5, 6, 17));
 }
 
-#inicio{
-    position: relative;
-    z-index: 0;
-    background-image: url('./Assets/img/backgroudPaginaInicial.png');
-    background-size: cover;
-    scroll-margin-top: 80px;
-    justify-content: center;
-    display: inline-block;
+.d-sombra-centro{
+    position: absolute;
+    inset: 0;
+    z-index: 1;
 }
+
+/* sombra da esquerda */
+.sombra-left{
+    position: absolute;
+    
+    left: 0%;
+
+    width: 50%;
+    height: 100%;
+
+    background: radial-gradient(
+    circle at left,
+    transparent 40%,
+    rgba(5, 6, 17, 0.828) 50%,
+    rgba(5, 6, 17, 0.835) 10%
+    );
+}
+
+/* sombra da direita */
+.sombra-right{
+    position: absolute;
+    
+    right: 0%;
+
+    width: 50%;
+    height: 100%;
+
+    background: radial-gradient(
+    circle at right,
+    transparent 40%,
+    rgba(5, 6, 17, 0.828) 50%,
+    rgba(5, 6, 17, 0.835) 10%
+    );
+}
+
+.d-titulo-inicio{
+    position: relative;
+    z-index: 1;
+    justify-content: center;
+    display: flex;
+}
+
+.titulo-inicio{
+    position: relative;
+    z-index: 2;
+    height: 300px;
+    width: 600px;
+}
+
+.descricao-inicio{
+    position: relative;
+    z-index: 2;
+    text-align:center;
+}
+
+.espacamento{
+    margin-bottom: 50px;
+}
+
+
 
 .d-btn-explorar{
     z-index: 1;
@@ -68,9 +120,9 @@ body{
     margin: 20px;
     background:linear-gradient(
     to bottom,
-    #eb2a08,
-    #d10404ec, 
-    #ad0101  
+    #792e03,
+    #502701ec, 
+    #491c01  
   );
     border:#e6bc03 3px solid;
 
@@ -103,33 +155,45 @@ body{
     transform: scale(1.05);
 }
 
+.div-card{
+    display: flex;
+    justify-content: center; 
+    flex-wrap: wrap;         
+    width: 100%;
+}
+
+.card-img{
+    width: 98.5%;
+    margin: 2px;
+    border-radius: 10px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    height: 60%;
+    position: relative;
+}
+
 #regioes{
     position: relative;
     z-index: 1;
     background-color: rgb(5, 6, 17);
-    scroll-margin-top: 80px;
+    scroll-margin-top: 60px;
     padding-top: 30px;
     padding-bottom: 80px;
     margin-bottom: 25px;
     margin-top: -10px;
     border-radius: 15px;
 
-    justify-content: center;
-    align-items: center;
-    display: flex;
-}
-
-.d-titulo-regioes{
+    flex-direction: column;
+    align-items: center;    
     justify-content: center;
     display: flex;
-    padding-top: 40px;
-    padding-bottom: 30px;
 }
 
 .card-regiao{
     background-color: #0c0d14f1;
-    width: 250px;
-    height: 400px;
+    width: 350px;
+    height: 450px;
+    color: white;
 
     display: flex;
     justify-content: flex-end;
@@ -140,6 +204,207 @@ body{
 
     border-radius: 10px;
     border: 1px solid #c8912ac9;
+}
+
+.d-titulo-regioes{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding-top: 40px;
+    padding-bottom: 30px;
+}
+
+.titulo-regioes{
+    font-size: 30px;
+    font-family: 'Cinzel', serif;
+    letter-spacing: 2px;
+    color: #c4a830;
+   
+}
+
+.left-titulo-regioes{
+    margin-top: 0px;
+    height: 40px;
+    width: 150px;
+    margin-right: 20px;
+}
+
+.right-titulo-regioes{
+    margin-top: 0px;
+    margin-left: 20px;
+    height: 40px;
+    width: 150px;
+    
+    rotate: 180deg;
+}
+.h1-card-regiao{
+    font-family: 'Cinzel', serif;
+    font-size: 25px;
+    color: #c4a830;
+    position: absolute;
+    bottom: 0;   
+    text-align: justify;                
+    margin: 0;
+}
+
+.descricao-regiao{
+    text-align: justify;
+}
+
+/* Porto De Luméria */
+
+.card-img-porto-lumeria{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    background-image:url(./Assets/img/portoDeLumeria.jpeg);
+    background-size: cover;
+    justify-content: center;
+}
+
+.card-img-porto-lumeria::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, #0c0d14 1%, #0c0d14fa 5%, transparent 20%);
+}
+
+.card-img-porto-lumeria::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle, transparent 90%, #0c0d14ce 100%, #0c0d14c2 30%);
+}
+
+/* Montanhas Gélidas */
+
+.card-img-montanhas-gelidas{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    background-image:url(./Assets/img/montanhasGelidas.jpeg);
+    background-size: cover;
+    justify-content: center;
+}
+
+.card-img-montanhas-gelidas::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, #0c0d14 1%, #0c0d14fa 5%, transparent 20%);
+}
+
+.card-img-montanhas-gelidas::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle, transparent 90%, #0c0d14ce 100%, #0c0d14c2 30%);
+}
+
+/* Floresta Carmesim */
+
+.card-img-floresta-carmesim{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    background-image:url(./Assets/img/florestaCarmesim.jpeg);
+    background-size: cover;
+    justify-content: center;
+}
+
+.card-img-floresta-carmesim::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, #0c0d14 1%, #0c0d14fa 5%, transparent 20%);
+}
+
+.card-img-floresta-carmesim::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle, transparent 90%, #0c0d14ce 100%, #0c0d14c2 30%);
+}
+
+/* Pantano Das Maldições */
+
+.card-img-pantano-maldicoes{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    background-image:url(./Assets/img/pantanoDasMaldicoes.jpeg);
+    background-size: cover;
+    justify-content: center;
+}
+
+.card-img-pantano-maldicoes::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, #0c0d14 1%, #0c0d14fa 5%, transparent 20%);
+}
+
+.card-img-pantano-maldicoes::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle, transparent 90%, #0c0d14ce 100%, #0c0d14c2 30%);
+}
+
+/* Deserto Dos Reis Esquecidos */
+
+.card-img-deserto-reis-esquecidos{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    background-image:url(./Assets/img/desertoDosReisEsquecidos.jpeg);
+    background-size: cover;
+    justify-content: center;
+}
+
+.card-img-deserto-reis-esquecidos::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, #0c0d14 1%, #0c0d14fa 5%, transparent 20%);
+}
+
+.card-img-deserto-reis-esquecidos::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle, transparent 90%, #0c0d14ce 100%, #0c0d14c2 30%);
+}
+
+/* Picos Da Ruína Celestial */
+
+.card-img-picos-ruina-celestial{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    background-image:url(./Assets/img/picosDaRuinaCelestial.jpeg);
+    background-size: cover;
+    justify-content: center;
+}
+
+.card-img-picos-ruina-celestial::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, #0c0d14 1%, #0c0d14fa 5%, transparent 20%);
+}
+
+.card-img-picos-ruina-celestial::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle, transparent 90%, #0c0d14ce 100%, #0c0d14c2 30%);
 }
 
 #monstros{
@@ -164,8 +429,9 @@ body{
 
 .card-monstro{
     background-color: #0c0d14f1;
-    width: 250px;
-    height: 400px;
+    width: 350px;
+    height: 450px;
+    color: white;
 
     display: flex;
     justify-content: flex-end;
