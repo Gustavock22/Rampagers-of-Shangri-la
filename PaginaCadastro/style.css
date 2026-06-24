@@ -1,0 +1,36 @@
+:root{
+    --cor-texto  :  #D4C5A9;
+}
+body{
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)),
+        url('Assets/img/backgroudPaginaInicial.png');
+    background-size: cover;    
+    background-position: center;  
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+}
+.titulo-principal{
+    font-family: 'Cinzel', serif;
+    letter-spacing: 4px;
+    background: linear-gradient(
+    to bottom,
+    #f0d080,  
+    #c8922a,   
+    #f5e090, 
+    #a06820,  
+    #7a4e10  
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.corpo-cartao{
+    background-color: aqua;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
