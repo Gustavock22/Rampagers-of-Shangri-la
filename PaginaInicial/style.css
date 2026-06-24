@@ -124,7 +124,7 @@ body{
     #502701ec, 
     #491c01  
   );
-    border:#e6bc03 3px solid;
+    border:#e6bc03 1.5px solid;
 
     border-radius: 20px;
 }
@@ -137,7 +137,7 @@ body{
     letter-spacing: 4px;
     background: linear-gradient(
     to bottom,
-    #ffd105,
+    #f7ff05,
     #dfac05ec, 
     #e6bc03,  
     #e9fa00  
