@@ -24,13 +24,81 @@ body{
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+
+  margin-left: 50px;
 }
 
 .corpo-cartao{
-    background-color: aqua;
-    width: 100px;
-    height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
+    min-height: 100vh;
+}
+
+.cartao-conteudo{
+    background-color: #0c0d14f1;
+    width: 100%;
+    max-width: 500px;
+    min-height: 350px;
+
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid #c8912ac9;
+
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+.cartao-titulo{
+    color : var(--cor-texto)
+}
+
+.input-cadastro{
+    width: 100%;
+    padding: 12px 15px;
+    margin-top: 15px;
+
+    background-color: #1a1c28;
+    color: var(--cor-texto);
+
+    border: 1px solid #c8922a;
+    border-radius: 8px;
+
+    font-size: 16px;
+    outline: none;
+
+    transition: all 0.3s ease;
+}
+
+.input-cadastro::placeholder{
+    color: #9e927d;
+}
+
+.input-cadastro:focus{
+    border-color: #f0d080;
+    box-shadow: 0 0 10px rgba(240, 208, 128, 0.4);
+}
+
+.botao-cadastro{
+    margin-top: 10px;
+    padding: 12px 15px;
+    border: 1px solid #c8922a;
+    background-color: darkred;
+    color: var(--cor-texto);
+    border-radius: 50px;
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+.botao-cadastro:hover{
+    background-color: #a31515;
+    box-shadow: 0 0 12px rgba(200, 146, 42, 0.5);
+    transform: translateY(-2px);
+}
+
+.botao-cadastro:active{
+    transform: translateY(0);
 }
