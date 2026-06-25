@@ -407,6 +407,18 @@ body{
   background: radial-gradient(circle, transparent 90%, #0c0d14ce 100%, #0c0d14c2 30%);
 }
 
+.btn-regiao{
+    height: 40px;
+    width: 150px;
+    margin-left: 100px;
+    margin-bottom: 25px;
+    border: 1px solid #c4a830;
+}
+.btn-regiao-texto{
+    font-family: 'Cinzel', serif;
+    color : #D4C5A9;
+}
+
 #monstros{
     background-color: black;
     scroll-margin-top: 80px;
