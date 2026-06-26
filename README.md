@@ -50,7 +50,7 @@ O que antes era santuário se fragmentou em biomas isolados, cada um moldado pel
 
 ## Estrutura do Projeto
 
-\`\`\`
+```text
 RAMPAGERS-OF-SHANGRI-LA/
 ├── Bestiario/
 │   ├── bestiario.html
@@ -68,7 +68,12 @@ RAMPAGERS-OF-SHANGRI-LA/
 │   ├── PANTANO/
 │   ├── PICO-CELESTIAL/
 │   └── PORTO/
-│       (cada bioma segue o mesmo padrão: Assets/, index.html, script.js, style.css)
+│
+│   Obs.: Todos os biomas possuem:
+│   ├── Assets/
+│   ├── index.html
+│   ├── script.js
+│   └── style.css
 │
 ├── PaginaCadastro/
 │   ├── Assets/
@@ -78,12 +83,12 @@ RAMPAGERS-OF-SHANGRI-LA/
 │
 ├── PaginaInicial/
 │   ├── Assets/
-│   ├── index.html       ← ponto de entrada do projeto
+│   ├── index.html (entrada principal)
 │   ├── script.js
 │   └── style.css
 │
 └── README.md
-\`\`\`
+```
 
 Cada bioma é tratado como um módulo independente, com seus próprios estilos, scripts e assets — o que permite expandir o universo (adicionando novos biomas ou criaturas) sem impactar o restante do projeto.
 
