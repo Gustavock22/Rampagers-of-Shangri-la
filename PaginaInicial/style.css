@@ -189,14 +189,16 @@ body{
     display: flex;
 }
 
-.card-regiao{
+.card-regiao {
     background-color: #0c0d14f1;
     width: 350px;
     height: 450px;
     color: white;
 
     display: flex;
+    flex-direction: column;
     justify-content: flex-end;
+    align-items: center; 
 
     margin-top: 30px;
     margin-right: 15px;
@@ -405,6 +407,29 @@ body{
   position: absolute;
   inset: 0;
   background: radial-gradient(circle, transparent 90%, #0c0d14ce 100%, #0c0d14c2 30%);
+}
+
+.descricao-regiao{
+    color: #D4C5A9;
+    font-size: 15px;
+    text-align: center;
+    padding: 10px;
+}
+
+.btn-regiao{
+    height: 40px;
+    width: 150px;
+    margin-bottom: 25px;
+    border: 1px solid #c4a830;
+}
+.btn-regiao:hover {
+    border: 1px solid #c4a830;     
+    color: #FFF;
+    background-color: rgba(196, 168, 48, 0.1);
+}
+.btn-regiao-texto{
+    font-family: 'Cinzel', serif;
+    color : #D4C5A9;
 }
 
 #monstros{
