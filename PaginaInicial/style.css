@@ -423,8 +423,34 @@ body{
 
 .d-titulo-monstros{
     justify-content: center;
+    align-items: center;
     display: flex;
+    padding-top: 40px;
     padding-bottom: 30px;
+}
+
+.titulo-monstros{
+    font-size: 30px;
+    font-family: 'Cinzel', serif;
+    letter-spacing: 2px;
+    color: #c4a830;
+   
+}
+
+.left-titulo-monstros{
+    margin-top: 0px;
+    height: 40px;
+    width: 150px;
+    margin-right: 20px;
+}
+
+.right-titulo-monstros{
+    margin-top: 0px;
+    margin-left: 20px;
+    height: 40px;
+    width: 150px;
+    
+    rotate: 180deg;
 }
 
 .card-monstro{
