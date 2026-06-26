@@ -444,6 +444,8 @@ body{
     justify-content: center;
     align-items: center;
     display: flex;
+
+    box-shadow: 0 8px 10px -10px #dfe796a1;
 }
 
 .d-titulo-monstros{
@@ -497,3 +499,12 @@ body{
 
 
 
+footer{
+    background-color: black;
+    padding-top: 30px;
+    padding-bottom: 80px;
+    margin-bottom: 10px;
+    border-top: 8px solid #9ea371c9;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
