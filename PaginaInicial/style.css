@@ -499,6 +499,55 @@ body{
 
 
 
+
+#sobre{
+    background-color: black;
+    scroll-margin-top: 80px;
+    padding-top: 30px;
+    padding-bottom: 80px;
+    margin-bottom: 10px; 
+    display: flex;
+
+    box-shadow: 0 8px 10px -10px #dfe796a1;
+}
+
+.d-titulo-sobre{
+    padding-top: 20px;
+    align-items: center;
+}
+
+.titulo-sobre{
+    font-size: 60px;
+    font-family: 'Cinzel', serif;
+    letter-spacing: 2px;
+    color: #c4a830;
+}
+
+.left-titulo-sobre{
+    margin-top: 20px;
+    margin-right: 20px;
+    height: 40px;
+    width: 150px;
+    
+    rotate: 90deg;
+}
+.right-titulo-sobre{
+    margin-top: 20px;
+    margin-left: 20px;
+    height: 40px;
+    width: 150px;
+    
+    rotate: 90deg;
+}
+
+.d-integrantes{
+    float: right;
+
+    clear: both;
+}
+
+
+
 footer{
     background-color: black;
     padding-top: 30px;
