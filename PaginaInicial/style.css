@@ -211,8 +211,8 @@ body{
 
 .card-regiao {
     background-color: #0c0d14f1;
-    width: 350px;
-    height: 450px;
+    width: 250px;
+    height: 350px;
     color: var(--cor-texto-primario);
 
     display: flex;
@@ -237,7 +237,7 @@ body{
 }
 
 .titulo-regioes{
-    font-size: 30px;
+    font-size: 40px;
     font-family: var(--fonte-principal-texto-destaque);
     letter-spacing: 2px;
     color: var(--cor-principal-texto-destaque);
@@ -261,7 +261,7 @@ body{
 
 .h1-card-regiao{
     font-family: var(--fonte-principal-texto-destaque);
-    font-size: 25px;
+    font-size: 20px;
     color: var(--cor-principal-texto-destaque);
     position: absolute;
     bottom: 0;   
@@ -271,6 +271,7 @@ body{
 
 .descricao-regiao{
     text-align: justify;
+    font-size: 4px;
 }
 
 /* Porto De Luméria */
@@ -502,8 +503,8 @@ body{
 
 .card-monstro{
     background-color: var(--cor-card-backgroud);
-    width: 350px;
-    height: 450px;
+    width: 250px;
+    height: 350px;
     color: var(--cor-texto-primario);
 
     display: flex;
@@ -544,8 +545,10 @@ body{
     align-items: center;
 }
 
+
+
 .titulo-sobre{
-    font-size: 50px;
+    font-size: 45px;
     font-family: var(--fonte-principal-texto-destaque);
     letter-spacing: 2px;
     color: var(--cor-principal-texto-destaque);
@@ -554,18 +557,31 @@ body{
 
 .left-titulo-sobre,
 .right-titulo-sobre {
-    height: 30px;
-    width: 120px;
+    height: 20px;
+    width: 100px;
     rotate: 90deg;
     margin: 0 -45px; 
     margin-left: 1px;
     margin-right: 1px;
 }
 
+.d-descricao-sobre{
+    margin-top: 20px;
+    align-items: center;
+}
 .descricao-sobre{
     margin-top: 20px;
-    text-align: justify;
+    text-align: center;
+    font-size: 12px;
 }
+.left-descricao-sobre,
+.right-descricao-sobre {
+    height: 100%;
+    width: 60px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
 
 .d-integrantes{
     margin: 10px;
