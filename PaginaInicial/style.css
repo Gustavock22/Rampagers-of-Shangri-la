@@ -187,6 +187,8 @@ body{
     align-items: center;    
     justify-content: center;
     display: flex;
+
+    box-shadow: 0 15px 10px 2px rgb(5, 6, 17);
 }
 
 .card-regiao {
@@ -224,21 +226,21 @@ body{
    
 }
 
+.right-titulo-regioes,
 .left-titulo-regioes{
     margin-top: 0px;
     height: 40px;
     width: 150px;
     margin-right: 20px;
 }
-
 .right-titulo-regioes{
     margin-top: 0px;
     margin-left: 20px;
     height: 40px;
     width: 150px;
-    
     rotate: 180deg;
 }
+
 .h1-card-regiao{
     font-family: 'Cinzel', serif;
     font-size: 25px;
@@ -498,8 +500,6 @@ body{
 }
 
 
-
-
 #sobre{
     background-color: black;
     scroll-margin-top: 80px;
@@ -507,8 +507,18 @@ body{
     padding-bottom: 80px;
     margin-bottom: 10px; 
     display: flex;
+}
 
-    box-shadow: 0 8px 10px -10px #dfe796a1;
+.alinhamento {
+    justify-content: center;
+    align-items: center; 
+    width: 100%;
+    min-height: 50vh; 
+}
+
+.d-sobre{
+    margin: 10px;
+    padding: 10px;
 }
 
 .d-titulo-sobre{
@@ -517,43 +527,95 @@ body{
 }
 
 .titulo-sobre{
-    font-size: 60px;
+    font-size: 50px;
     font-family: 'Cinzel', serif;
     letter-spacing: 2px;
     color: #c4a830;
+    text-align: center;
 }
 
-.left-titulo-sobre{
-    margin-top: 20px;
-    margin-right: 20px;
-    height: 40px;
-    width: 150px;
-    
+.left-titulo-sobre,
+.right-titulo-sobre {
+    height: 30px;
+    width: 120px;
     rotate: 90deg;
+    margin: 0 -45px; 
+    margin-left: 1px;
+    margin-right: 1px;
 }
-.right-titulo-sobre{
+
+.descricao-sobre{
     margin-top: 20px;
-    margin-left: 20px;
-    height: 40px;
-    width: 150px;
-    
-    rotate: 90deg;
+    text-align: justify;
 }
 
 .d-integrantes{
-    float: right;
+    margin: 10px;
+    padding: 10px;
 
-    clear: both;
+    justify-content: center;
+    align-items: center;
+    display: flex;
 }
 
+.card-integrante {
+    width: 250px;
+    height: 200px;
+    color: white;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center; 
+
+    margin: 15px; 
+    flex-shrink: 0;
+}
+
+.lucas{
+    background-image:url();
+
+}
+.gustavo{
+    background-image:url();
+
+}
+.henry{
+    background-image:url();
+
+}
+
+.card-nome{
+    height: 30%;
+    width: 100%;
+    background-color: rgb(5, 6, 17);
+    border-radius: 10px;
+    border: 1px solid #c8912ac9;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center; 
+}
+
+.nome-integrante{
+    font-size: 25px;
+    font-family: 'Cinzel', serif;
+    letter-spacing: 2px;
+}
+.integrante-funcao{
+    font-size: 10px;
+    font-family: 'Cinzel', serif;
+    letter-spacing: 2px;
+}
 
 
 footer{
     background-color: black;
-    padding-top: 30px;
-    padding-bottom: 80px;
-    margin-bottom: 10px;
-    border-top: 8px solid #9ea371c9;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    margin-top: 20px;
+    border-top: 3px solid #9ea371c9;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }
