@@ -1,3 +1,21 @@
+:root{
+    --cor-texto-primario    :   #D4C5A9;
+    --cor-texto-secundario  :   #beb49e;
+    --cor-principal-fundo   :   rgb(5, 6, 17);
+    --cor-principal-texto-destaque    :   #c4a830;
+    --cor-secundaria-texto-destaque   :   #a58e26;
+    --cor-principal-borda   :   #e6bc03;
+    --cor-secundaria-fundo  :   rgb(7, 1, 20);
+    --cor-card-backgroud   :   rgb(13, 4, 29);
+
+    --fonte-principal-texto-destaque  :     'Cinzel', serif;
+    --fonte-principal-texto           :     'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    --cor-borda-lucas       :   ;
+    --cor-borda-henry       :   ;
+    --cor-borda-gustavo     :   ;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -6,8 +24,8 @@
 
 body{
     background-color: #0c0d14f1;
-    color: white;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--cor-texto-primario);
+    font-family: var(--fonte-principal-texto);
     margin: 0;
     padding: 0;
 }
@@ -124,7 +142,7 @@ body{
     #502701ec, 
     #491c01  
   );
-    border:#e6bc03 1.5px solid;
+    border: var(--cor-principal-borda) 1.5px solid;
 
     border-radius: 20px;
 }
@@ -133,7 +151,7 @@ body{
     width: 200px;
     font-size: 25px;
     border: none;
-    font-family: 'Cinzel', serif;
+    font-family: var(--fonte-principal-texto-destaque);
     letter-spacing: 4px;
     background: linear-gradient(
     to bottom,
@@ -195,7 +213,7 @@ body{
     background-color: #0c0d14f1;
     width: 350px;
     height: 450px;
-    color: white;
+    color: var(--cor-texto-primario);
 
     display: flex;
     flex-direction: column;
@@ -207,7 +225,7 @@ body{
     margin-left: 15px;
 
     border-radius: 10px;
-    border: 1px solid #c8912ac9;
+    border: 1px solid var(--cor-principal-borda);
 }
 
 .d-titulo-regioes{
@@ -220,9 +238,9 @@ body{
 
 .titulo-regioes{
     font-size: 30px;
-    font-family: 'Cinzel', serif;
+    font-family: var(--fonte-principal-texto-destaque);
     letter-spacing: 2px;
-    color: #c4a830;
+    color: var(--cor-principal-texto-destaque);
    
 }
 
@@ -242,9 +260,9 @@ body{
 }
 
 .h1-card-regiao{
-    font-family: 'Cinzel', serif;
+    font-family: var(--fonte-principal-texto-destaque);
     font-size: 25px;
-    color: #c4a830;
+    color: var(--cor-principal-texto-destaque);
     position: absolute;
     bottom: 0;   
     text-align: justify;                
@@ -412,7 +430,7 @@ body{
 }
 
 .descricao-regiao{
-    color: #D4C5A9;
+    color: var(--cor-texto-secundario);
     font-size: 15px;
     text-align: center;
     padding: 10px;
@@ -422,20 +440,20 @@ body{
     height: 40px;
     width: 150px;
     margin-bottom: 25px;
-    border: 1px solid #c4a830;
+    border: 1px solid var(--cor-principal-borda);
 }
 .btn-regiao:hover {
-    border: 1px solid #c4a830;     
-    color: #FFF;
+    border: 1px solid var(--cor-principal-borda);     
+    color: var(--cor-texto-primario);
     background-color: rgba(196, 168, 48, 0.1);
 }
 .btn-regiao-texto{
-    font-family: 'Cinzel', serif;
-    color : #D4C5A9;
+    font-family: var(--fonte-principal-texto-destaque);
+    color : var(--cor-secundaria-texto-destaque);
 }
 
 #monstros{
-    background-color: black;
+    background-color: var(--cor-secundaria-fundo);
     scroll-margin-top: 80px;
     padding-top: 30px;
     padding-bottom: 80px;
@@ -460,9 +478,9 @@ body{
 
 .titulo-monstros{
     font-size: 30px;
-    font-family: 'Cinzel', serif;
+    font-family: var(--fonte-principal-texto-destaque);
     letter-spacing: 2px;
-    color: #c4a830;
+    color: var(--cor-principal-texto-destaque);
    
 }
 
@@ -483,10 +501,10 @@ body{
 }
 
 .card-monstro{
-    background-color: #0c0d14f1;
+    background-color: var(--cor-card-backgroud);
     width: 350px;
     height: 450px;
-    color: white;
+    color: var(--cor-texto-primario);
 
     display: flex;
     justify-content: flex-end;
@@ -496,12 +514,12 @@ body{
     margin-left: 15px;
 
     border-radius: 10px;
-    border: 1px solid #c8912ac9;
+    border: 1px solid var(--cor-principal-borda);
 }
 
 
 #sobre{
-    background-color: black;
+    background-color: var(--cor-secundaria-fundo);
     scroll-margin-top: 80px;
     padding-top: 30px;
     padding-bottom: 80px;
@@ -528,9 +546,9 @@ body{
 
 .titulo-sobre{
     font-size: 50px;
-    font-family: 'Cinzel', serif;
+    font-family: var(--fonte-principal-texto-destaque);
     letter-spacing: 2px;
-    color: #c4a830;
+    color: var(--cor-principal-texto-destaque);
     text-align: center;
 }
 
@@ -561,7 +579,7 @@ body{
 .card-integrante {
     width: 250px;
     height: 200px;
-    color: white;
+    color: var(--cor-texto-primario);
     
     display: flex;
     flex-direction: column;
@@ -588,9 +606,9 @@ body{
 .card-nome{
     height: 30%;
     width: 100%;
-    background-color: rgb(5, 6, 17);
+    background-color: var(--cor-card-backgroud);
     border-radius: 10px;
-    border: 1px solid #c8912ac9;
+    border: 1px solid var(--cor-principal-borda);
 
     display: flex;
     flex-direction: column;
@@ -600,18 +618,18 @@ body{
 
 .nome-integrante{
     font-size: 25px;
-    font-family: 'Cinzel', serif;
+    font-family: var(--fonte-principal-texto-destaque);
     letter-spacing: 2px;
 }
 .integrante-funcao{
     font-size: 10px;
-    font-family: 'Cinzel', serif;
+    font-family: var(--fonte-principal-texto-destaque);
     letter-spacing: 2px;
 }
 
 
 footer{
-    background-color: black;
+    background-color: var(--cor-principal-fundo);
     padding-top: 15px;
     padding-bottom: 20px;
     margin-top: 20px;
