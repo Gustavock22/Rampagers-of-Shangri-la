@@ -115,8 +115,8 @@ body{
 .titulo-inicio{
     position: relative;
     z-index: 2;
-    height: 300px;
-    width: 600px;
+    height: 250px;
+    width: 550px;
 }
 
 .descricao-inicio{
@@ -211,8 +211,8 @@ body{
 
 .card-regiao {
     background-color: #0c0d14f1;
-    width: 250px;
-    height: 350px;
+    width: 260px;
+    height: 360px;
     color: var(--cor-texto-primario);
 
     display: flex;
@@ -241,7 +241,6 @@ body{
     font-family: var(--fonte-principal-texto-destaque);
     letter-spacing: 2px;
     color: var(--cor-principal-texto-destaque);
-   
 }
 
 .right-titulo-regioes,
@@ -270,8 +269,26 @@ body{
 }
 
 .descricao-regiao{
-    text-align: justify;
-    font-size: 4px;
+    color: var(--cor-texto-secundario);
+    font-size: 12px;
+    text-align: center;
+    padding: 10px;
+}
+
+.btn-regiao{
+    height: 40px;
+    width: 150px;
+    margin-bottom: 25px;
+    border: 1px solid var(--cor-principal-borda);
+}
+.btn-regiao:hover {
+    border: 1px solid var(--cor-principal-borda);     
+    color: var(--cor-texto-primario);
+    background-color: rgba(196, 168, 48, 0.1);
+}
+.btn-regiao-texto{
+    font-family: var(--fonte-principal-texto-destaque);
+    color : var(--cor-secundaria-texto-destaque);
 }
 
 /* Porto De Luméria */
@@ -430,28 +447,7 @@ body{
   background: radial-gradient(circle, transparent 90%, #0c0d14ce 100%, #0c0d14c2 30%);
 }
 
-.descricao-regiao{
-    color: var(--cor-texto-secundario);
-    font-size: 15px;
-    text-align: center;
-    padding: 10px;
-}
 
-.btn-regiao{
-    height: 40px;
-    width: 150px;
-    margin-bottom: 25px;
-    border: 1px solid var(--cor-principal-borda);
-}
-.btn-regiao:hover {
-    border: 1px solid var(--cor-principal-borda);     
-    color: var(--cor-texto-primario);
-    background-color: rgba(196, 168, 48, 0.1);
-}
-.btn-regiao-texto{
-    font-family: var(--fonte-principal-texto-destaque);
-    color : var(--cor-secundaria-texto-destaque);
-}
 
 #monstros{
     background-color: var(--cor-secundaria-fundo);
